@@ -1,0 +1,4 @@
+.settings
+arm
+translations/*.qm
+.preview-*
