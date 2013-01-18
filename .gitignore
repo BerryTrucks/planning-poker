@@ -1,4 +1,6 @@
 .settings
 arm
+arm-p
+x86
 translations/*.qm
 .preview-*
