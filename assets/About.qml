@@ -21,7 +21,7 @@ Sheet {
                 Label {
                     horizontalAlignment: HorizontalAlignment.Fill
                     text: qsTr("Planning Poker v%1\n" +
-                    "Copyright 2013, Mario Boikov").arg("1.0")
+                    "Copyright 2013, Mario Boikov").arg("1.0.1")
                     
                     textStyle {
                         base: SystemDefaults.TextStyles.TitleText
