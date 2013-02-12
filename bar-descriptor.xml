@@ -67,6 +67,7 @@
     <splashScreens>
        <image>splash720.png</image>
        <image>splash768.png</image>
+       <image>splash720x720.png</image>
     </splashScreens>
     <configuration name="Device-Debug">
        <platformArchitecture>armle-v7</platformArchitecture>
@@ -100,6 +101,7 @@
     </asset>
     <asset path="splash720.png">splash720.png</asset>
     <asset path="splash768.png">splash768.png</asset>
+    <asset path="splash720x720.png">splash720x720.png</asset>
     
     <cascadesTheme>dark</cascadesTheme>
 
