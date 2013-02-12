@@ -16,31 +16,39 @@
 import bb.cascades 1.0
 
 Container {
-	DropDown {
-	    id: dropDown
 
-	    function isSelected(theme) {
-	        return theme.foreground == AppSettings.cardTheme.foreground &&
-	                theme.background == AppSettings.cardTheme.background
-	    }
-
-	    horizontalAlignment: HorizontalAlignment.Center
-	    title: qsTr("Card theme")
-
-        onSelectedValueChanged: AppSettings.cardTheme = selectedValue
-
-	    Option {
-	        text: qsTr("Dark")
-	        value: {'foreground':'#fafafa', 'background':'#262626'}
-	        selected: dropDown.isSelected(value)
-	    }
+	Container {
 	    
-	    Option {
-	        text: qsTr("Light")
-	        value: {'foreground':'#262626', 'background':'#fafafa'}
-	        selected: dropDown.isSelected(value)
-	    }
-	}
+	    leftPadding: 16
+	    rightPadding: 16   
+
+		DropDown {
+		    id: dropDown
 	
+		    function isSelected(theme) {
+		        return theme.foreground == AppSettings.cardTheme.foreground &&
+		                theme.background == AppSettings.cardTheme.background
+		    }
+	
+		    horizontalAlignment: HorizontalAlignment.Center
+		    title: qsTr("Card theme")
+	
+	        onSelectedValueChanged: AppSettings.cardTheme = selectedValue
+	
+		    Option {
+		        text: qsTr("Dark")
+		        value: {'foreground':'#fafafa', 'background':'#262626'}
+		        selected: dropDown.isSelected(value)
+		    }
+		    
+		    Option {
+		        text: qsTr("Light")
+		        value: {'foreground':'#262626', 'background':'#fafafa'}
+		        selected: dropDown.isSelected(value)
+		    }
+		}		
+	}
+
 	Divider {}   
+
 }
